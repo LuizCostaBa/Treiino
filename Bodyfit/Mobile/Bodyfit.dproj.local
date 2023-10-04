@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/16 11:08:17.000.563,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/16 12:50:48.000.217,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/19 15:32:32.000.701,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 20:18:41.000.862,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 20:19:06.000.959,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Bodyfit\Mobile\UnitLogin.fmx</Transaction>
+    <Transaction>2023/01/23 20:19:06.000.959,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Bodyfit\Mobile\UnitLogin.pas</Transaction>
+    <Transaction>2023/01/23 20:19:11.000.948,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Bodyfit\Mobile\Bodyfit.dproj</Transaction>
+    <Transaction>2023/01/23 20:34:15.000.637,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 20:34:31.000.724,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitPrincipal.fmx</Transaction>
+    <Transaction>2023/01/23 20:34:31.000.724,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitPrincipal.pas</Transaction>
+    <Transaction>2023/01/23 20:49:04.000.387,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 20:49:52.000.465,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\Frames\Frame.Treino.pas</Transaction>
+    <Transaction>2023/01/23 20:49:52.000.465,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\Frames\Frame.Treino.fmx</Transaction>
+    <Transaction>2023/01/23 21:00:00.000.006,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:00:23.000.879,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitTreinoDetalhe.pas</Transaction>
+    <Transaction>2023/01/23 21:00:23.000.879,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitTreinoDetalhe.fmx</Transaction>
+    <Transaction>2023/01/23 21:10:19.000.263,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:10:42.000.955,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitTreinoCad.fmx</Transaction>
+    <Transaction>2023/01/23 21:10:42.000.955,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitTreinoCad.pas</Transaction>
+    <Transaction>2023/01/23 21:15:55.000.943,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:16:33.000.535,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\Frames\Frame.FichaExercicio.pas</Transaction>
+    <Transaction>2023/01/23 21:16:33.000.535,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\Frames\Frame.FichaExercicio.fmx</Transaction>
+    <Transaction>2023/01/23 21:25:57.000.126,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:26:21.000.459,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitExercicio.fmx</Transaction>
+    <Transaction>2023/01/23 21:26:21.000.459,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitExercicio.pas</Transaction>
+    <Transaction>2023/01/23 21:30:39.000.346,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:30:52.000.636,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitPerfil.fmx</Transaction>
+    <Transaction>2023/01/23 21:30:52.000.636,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitPerfil.pas</Transaction>
+    <Transaction>2023/01/23 21:35:23.000.810,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:35:35.000.002,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitPerfilCad.fmx</Transaction>
+    <Transaction>2023/01/23 21:35:35.000.002,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitPerfilCad.pas</Transaction>
+    <Transaction>2023/01/23 21:38:44.000.321,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 21:39:07.000.844,D:\Bodyfit\Mobile\Unit1.fmx=D:\Bodyfit\Mobile\UnitPerfilSenha.fmx</Transaction>
+    <Transaction>2023/01/23 21:39:07.000.844,D:\Bodyfit\Mobile\Unit1.pas=D:\Bodyfit\Mobile\UnitPerfilSenha.pas</Transaction>
+    <Transaction>2023/01/27 20:15:27.000.175,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/27 20:15:55.000.422,D:\Bodyfit\Mobile\DataModules\DataModule.Global.pas=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/27 20:15:55.000.422,D:\Bodyfit\Mobile\DataModules\DataModule.Global.dfm=D:\Bodyfit\Mobile\Unit1.dfm</Transaction>
+    <Transaction>2023/01/27 20:26:47.000.549,=D:\Bodyfit\Mobile\Units\uLoading.pas</Transaction>
+    <Transaction>2023/01/27 20:52:58.000.339,=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+    <Transaction>2023/01/27 20:53:08.000.086,D:\Bodyfit\Mobile\Units\uSession.pas=D:\Bodyfit\Mobile\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacMini iOSSimulator="iPhone5"/>
+		<NoProfile Android64="" Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

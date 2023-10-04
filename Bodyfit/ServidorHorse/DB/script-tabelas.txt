@@ -1,0 +1,250 @@
+CREATE TABLE TAB_USUARIO (
+    ID_USUARIO INT NOT NULL PRIMARY KEY,
+    NOME       VARCHAR(100),
+    EMAIL      VARCHAR(100),
+    SENHA      VARCHAR(100)
+);
+
+create generator gen_usuario_id;
+
+CREATE TRIGGER TR_USUARIO FOR TAB_USUARIO
+ACTIVE BEFORE INSERT POSITION 0
+AS
+BEGIN
+    new.ID_USUARIO =gen_id(gen_usuario_id, 1);
+END
+
+
+--------------------
+
+
+CREATE TABLE TAB_TREINO (
+    ID_TREINO     INT NOT NULL PRIMARY KEY,
+    ID_USUARIO    INT,
+    NOME          VARCHAR(100),
+    DESCRICAO     VARCHAR(100),
+    DIA_SEMANA    INT
+);
+
+create generator gen_treino_id;
+
+CREATE TRIGGER TR_TREINO FOR TAB_TREINO
+ACTIVE BEFORE INSERT POSITION 0
+AS
+BEGIN
+    new.ID_TREINO =gen_id(gen_treino_id, 1);
+END
+
+
+--------------------
+
+
+CREATE TABLE TAB_EXERCICIO (
+    ID_EXERCICIO  INT NOT NULL PRIMARY KEY,
+    NOME          VARCHAR(100),
+    DESCRICAO     VARCHAR(1000),
+    URL_VIDEO     VARCHAR(1000)
+);
+
+create generator gen_exercicio_id;
+
+CREATE TRIGGER TR_EXERCICIO FOR TAB_EXERCICIO
+ACTIVE BEFORE INSERT POSITION 0
+AS
+BEGIN
+    new.ID_EXERCICIO =gen_id(gen_exercicio_id, 1);
+END
+
+
+--------------------
+
+
+CREATE TABLE TAB_TREINO_EXERCICIO (
+    ID_TREINO_EXERCICIO  INT NOT NULL PRIMARY KEY,
+    ID_TREINO     INT,
+    ID_EXERCICIO  INT,
+    DURACAO       VARCHAR(100)
+);
+
+create generator gen_treino_exercicio_id;
+
+CREATE TRIGGER TR_TREINO_EXERCICIO FOR TAB_TREINO_EXERCICIO
+ACTIVE BEFORE INSERT POSITION 0
+AS
+BEGIN
+    new.ID_TREINO_EXERCICIO =gen_id(gen_treino_exercicio_id, 1);
+END
+
+
+------------------------
+
+
+-- USUARIO
+INSERT INTO TAB_USUARIO(NOME, EMAIL, SENHA)
+VALUES('Heber Stein Mazutti', 'heber@99coders.com.br', '12345');
+
+
+
+-- EXERCICIOS
+INSERT INTO TAB_EXERCICIO(NOME, DESCRICAO, URL_VIDEO)
+VALUES('Cardio (jump, esteira ou bike)',
+       'Exercício físio cardio é uma modalidade de treino em que o sistema cardiovascular e respiratório é altamente exigido pela amplitude e esforço dos movimentos envolvidos.',
+       'https://www.youtube.com/embed/jPhZ4oel_yM');
+
+INSERT INTO TAB_EXERCICIO(NOME, DESCRICAO, URL_VIDEO)
+VALUES('Prancha isométrica',
+       'A prancha abdominal é um exercício isométrico (estático ou sem movimentação) eficaz e simples, que trabalha diversos grupos musculares do corpo, auxiliando no fortalecimento geral, na melhora postural e muito mais...',
+       'https://www.youtube.com/embed/3qTz7853Yiw');
+
+INSERT INTO TAB_EXERCICIO(NOME, DESCRICAO, URL_VIDEO)
+VALUES('Lombar',
+       'Praticar exercícios para fortalecer a coluna lombar é se prevenir de futuros desconfortos e investir em uma maior qualidade de vida, independente da idade.',
+       'https://www.youtube.com/embed/-tCYvqeVYLk');
+
+INSERT INTO TAB_EXERCICIO(NOME, DESCRICAO, URL_VIDEO)
+VALUES('Supino',
+       'Um dos exercícios favoritos de quem busca ganhar músculos nos membros superiores, o supino reto é um dos movimentos mais clássicos e famosos da musculação, protagonista até de competições.',
+       'https://www.youtube.com/embed/2y6KoZDjCTc');
+
+INSERT INTO TAB_EXERCICIO(NOME, DESCRICAO, URL_VIDEO)
+VALUES('Remada',
+       'A remada é como um supino reverso em que você puxa o peso para próximo do tórax, em vez de empurrá-lo. Conhecida como um dos melhores exercícios para melhorar a força das costas, a remada também ajuda a combater a má postura, colocando o ombro de volta em uma posição neutra.',
+       'https://www.youtube.com/embed/WxkMoxuMSho');
+
+INSERT INTO TAB_EXERCICIO(NOME, DESCRICAO, URL_VIDEO)
+VALUES('Flexão de braço',
+       'Um exercício funcional, que dispensa acessórios, pode ser feito em qualquer lugar e fortalece muitos músculos ao mesmo tempo... Parece perfeito? Pois essas são características da clássica flexão de braços, que trabalha peito, tríceps, ombros, lombar e core e só necessita de um espaço no chão para ser realizada.',
+       'https://www.youtube.com/embed/lkvSelJ0tQ8');
+
+
+-- TREINOS
+INSERT INTO TAB_TREINO(ID_USUARIO, NOME, DESCRICAO, DIA_SEMANA)
+VALUES(1, 'Segunda-feira', 'Abdômen e Pernas', 2);
+
+INSERT INTO TAB_TREINO(ID_USUARIO, NOME, DESCRICAO, DIA_SEMANA)
+VALUES(1, 'Terça-feira', 'Tríceps, Abdômen e Pernas', 3);
+
+INSERT INTO TAB_TREINO(ID_USUARIO, NOME, DESCRICAO, DIA_SEMANA)
+VALUES(1, 'Quarta-feira', 'Lombar e Abdômen', 4);
+
+INSERT INTO TAB_TREINO(ID_USUARIO, NOME, DESCRICAO, DIA_SEMANA)
+VALUES(1, 'Quinta-feira', 'Tríceps, Abdômen e Pernas', 5);
+
+INSERT INTO TAB_TREINO(ID_USUARIO, NOME, DESCRICAO, DIA_SEMANA)
+VALUES(1, 'Sexta-feira', 'Lombar e Abdômen', 6);
+
+INSERT INTO TAB_TREINO(ID_USUARIO, NOME, DESCRICAO, DIA_SEMANA)
+VALUES(1, 'Sábado', 'Cardio', 7);
+
+
+-- TREINOS + EXERCICIOS
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(1, 1, '30 minutos');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(1, 2, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(1, 3, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(1, 4, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(1, 5, '3x 15 a 20');
+
+---
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(2, 1, '30 minutos');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(2, 2, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(2, 3, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(2, 4, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(2, 6, '3x 15 a 20');
+
+---
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(3, 1, '30 minutos');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(3, 2, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(3, 3, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(3, 4, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(3, 5, '3x 15 a 20');
+
+---
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(4, 1, '30 minutos');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(4, 2, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(4, 3, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(4, 4, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(4, 6, '3x 15 a 20');
+
+---
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(5, 1, '30 minutos');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(5, 2, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(5, 3, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(5, 4, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(5, 5, '3x 15 a 20');
+
+---
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(6, 1, '30 minutos');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(6, 2, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(6, 3, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(6, 4, '3x 15 a 20');
+
+INSERT INTO TAB_TREINO_EXERCICIO(ID_TREINO, ID_EXERCICIO, DURACAO)
+VALUES(6, 6, '3x 15 a 20');
+
+
+
+select  t.id_treino, t.nome as treino, t.descricao descr_treino, t.dia_semana,
+        e.nome exercicio, e.descricao descr_exercicio, e.url_video
+from  tab_treino t
+join  tab_treino_exercicio te on (te.id_treino = t.id_treino)
+join  tab_exercicio e on (e.id_exercicio = te.id_exercicio)
+where t.id_usuario = 1
+order by t.dia_semana, e.nome
+

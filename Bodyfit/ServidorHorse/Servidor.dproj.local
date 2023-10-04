@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/16 11:08:17.000.563,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/16 12:50:48.000.217,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/19 15:32:32.000.701,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:22:05.000.380,=C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:22:20.000.177,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Bodyfit\ServidorHorse\UnitPrincipal.pas</Transaction>
+    <Transaction>2023/01/25 20:22:20.000.177,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Bodyfit\ServidorHorse\UnitPrincipal.fmx</Transaction>
+    <Transaction>2023/01/25 20:22:25.000.578,C:\Users\INTEL\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Bodyfit\ServidorHorse\Servidor.dproj</Transaction>
+    <Transaction>2023/01/25 20:38:25.000.985,=D:\Bodyfit\ServidorHorse\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:39:15.000.019,D:\Bodyfit\ServidorHorse\Unit1.pas=D:\Bodyfit\ServidorHorse\DataModules\DataModule.Global.pas</Transaction>
+    <Transaction>2023/01/25 20:39:15.000.019,D:\Bodyfit\ServidorHorse\Unit1.dfm=D:\Bodyfit\ServidorHorse\DataModules\DataModule.Global.dfm</Transaction>
+    <Transaction>2023/01/25 20:56:00.000.321,=D:\Bodyfit\ServidorHorse\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:56:41.000.718,D:\Bodyfit\ServidorHorse\Unit1.pas=D:\Bodyfit\ServidorHorse\Controllers\Controllers.Global.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacMini iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
